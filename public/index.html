@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин автомобилей</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" />
+
+    <link rel="stylesheet" href="../src/css/fonts.css" />
+    <link rel="stylesheet" href="../src/css/base.css" />
+    <link rel="stylesheet" href="../src/css/header.css" />
+    <link rel="stylesheet" href="../src/css/main.css" />
+    <link rel="stylesheet" href="../src/css/form.css" />
+    <link rel="stylesheet" href="../src/css/footer.css" />
+    <link rel="stylesheet" href="../src/css/theme-switcher.css" />
+  </head>
+  <body>
+    <div class="app">
+      <button type="button" class="scroll-top"></button>
+
+      <div class="modal-container" style="display: none">
+        <div class="modal">
+          <span type="button" class="close-button"></span>
+          <div class="modal-content"></div>
+        </div>
+      </div>
+
+      <header class="header">
+        <div class="container header-container">
+          <div class="header-tab">
+            <div class="header-tab__item" data-code="sedan">Седаны</div>
+            <div class="header-tab__item" data-code="hatchback">Хэтчбеки</div>
+            <div class="header-tab__item" data-code="universal">Универсалы</div>
+          </div>
+
+          <div class="header-theme-switch">
+            <input type="checkbox" name="switcher" id="switcher-input" class="switcher-input" />
+
+            <label class="switcher-label" for="switcher-input">
+              <i class="fas fa-solid fa-moon"></i>
+              <span class="switcher-toggler"></span>
+              <i class="fas fa-solid fa-sun"></i>
+            </label>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="product-list-title"></div>
+        <div class="product-list container"></div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <ul class="footer-link-list">
+            <li class="footer-link-item" data-code="sedan">Седаны</li>
+            <li class="footer-link-item" data-code="hatchback">Хэтчбеки</li>
+            <li class="footer-link-item" data-code="universal">Универсалы</li>
+          </ul>
+        </div>
+      </footer>
+
+      <script src="../src/scripts/scroll-top.js"></script>
+      <script src="../src/scripts/modal.js"></script>
+      <script src="../src/scripts/header.js"></script>
+      <script src="../src/scripts/product.js"></script>
+      <script src="../src/scripts/footer.js"></script>
+      <script src="../src/scripts/theme-switcher.js"></script>
+    </div>
+  </body>
+</html>

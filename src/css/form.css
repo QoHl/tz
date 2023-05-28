@@ -1,0 +1,43 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-label {
+  min-width: 100px;
+}
+
+.form-buttons {
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+
+.form-close {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: var(--button-background-danger);
+  color: #fff;
+}
+
+.form-buy {
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: var(--button-background);
+  color: #fff;
+}
